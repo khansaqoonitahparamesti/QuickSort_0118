@@ -6,3 +6,4 @@ using namespace std;
 
 // array of integers to hold values
 int arr[20];
+int cmo_count = 0;// number of comparasion
