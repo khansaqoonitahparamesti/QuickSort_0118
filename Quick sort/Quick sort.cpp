@@ -54,7 +54,7 @@ void q_short(int low, int high)
 	while (i <= j)// step 10
 	{
 		// search for an element greater than pivot
-		while ((arr[i] <= pivot && (i <= high))// step 5
+		while ((arr[i] <= pivot) && (i <= high))// step 5
 		{
 			i++;//step 6
 			cmp_count++;
@@ -64,7 +64,7 @@ void q_short(int low, int high)
 		while ((arr[j] > pivot) && (j >= low)) //step 7
 		{
 			j--;//step 8
-			cmp - count++;
+			cmp_count++;
 		}
 		cmp_count++;
 		if (i < j)//step 9
@@ -73,4 +73,8 @@ void q_short(int low, int high)
 			swap(i, j);
 		}
 	}
-}
+	if (low < j) { //step 11
+		// swap  the pivot element with the element at index j
+		swap(low, j);
+	}
+}	
