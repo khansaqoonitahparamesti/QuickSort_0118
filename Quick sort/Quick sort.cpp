@@ -91,4 +91,10 @@ void display() {
 	cout << "sorted array" << endl;
 	cout << "-----------------" << endl;
 
+	for (int i = 0; i < n; i++) 
+	{
+		cout << arr[i] << "";
+	}
+	cout << "\n\n number of comparasions:" << cmp_count << endl;
+	cout << "number of data movement: " << mov_count << endl;
 }
